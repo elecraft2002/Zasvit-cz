@@ -21,7 +21,7 @@ export const Layout = ({
       <main>{children}</main>
       <Bounded as="footer">
         <div className="grid grid-cols-1 justify-items-center gap-24">
-          <h2>@ČVUT FIT 2023</h2>
+          <h2> Veškerá práce - @FIT ČVUT 2023</h2>
         </div>
       </Bounded>
     </div>

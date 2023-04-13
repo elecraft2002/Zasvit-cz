@@ -1,5 +1,6 @@
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { Bounded } from "./Bounded";
 
 export const Layout = ({
   navigation,
@@ -18,7 +19,11 @@ export const Layout = ({
         settings={settings}
       />
       <main>{children}</main>
-      <Footer withSignUpForm={withSignUpForm} settings={settings} />
+      <Bounded as="footer">
+        <div className="grid grid-cols-1 justify-items-center gap-24">
+          <h2>@ČVUT FIT 2023</h2>
+        </div>
+      </Bounded>
     </div>
   );
 };
